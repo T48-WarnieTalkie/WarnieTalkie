@@ -1,0 +1,50 @@
+pacchetti npm utili:
+
+npm-check-updates: con ncu --upgrade aggiorna tutte le dependencies
+express-generator: con express <nome> crea scheletro di base per applicazione express
+express-async-handler: quando si crea una route, usando asyncHandler() come funzione si evita di costruire sempre blocchi try-catch
+
+struttura richieste:
+
+richiesta -> route -> controller -> models e database
+
+todo: 
+-model danger
+-script per aggiungere roba a danger
+-pagina /danger che visualizza un danger
+
+
+model danger:
+-descrizione
+-data di invio
+-coordinate
+-categoria
+
+bootstrap:
+
+-margin: my-1
+-padding: py-1
+-background: bg-
+
+
+to do:
+-fare navbar
+-
+
+
+
+flexbox:
+layout monodimensionale per distribuire equamente lo spazio fra gli elementi
+    due assi:
+    -main axis (flex-direction) e cross axis (perpendicolare)
+    monodimensionale: pensare in termini di start e end e non dx o sx
+    align-item: allineamento sulla cross-axis
+    flex-wrap: fa si che elementi che non ci stanno su una linea vadano a capo
+    flex-grow e flex-shrink: indice di quanto un elemento è disposto a crescere/rimpicciolire rispetto agli altri per fare spazio
+    flex-basis: dimensione base di un elemento (main axis)
+    align-items: allineamento su cross-axis
+    justify-content: allineamento su main-axis
+        space-around, space-evenly, space-between
+    gap/gutter: spazio fra elementi in grid/flexbox
+
+    margin-left: auto -> pushare elemento sulla destra, prendendo tutto lo spazio disponibile a sinistra

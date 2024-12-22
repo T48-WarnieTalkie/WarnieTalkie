@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css")
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    link(rel="stylesheet" href="/stylesheets/compiled_scss/custom.css")
+    script(defer src="bootstrap/dist/js/bootstrap.bundle.min.js")
+    block head
+  body(class="d-flex flex-column")
+    nav(class="navbar navbar-expand-sm bg-body-tertiary") 
+      div(class="container-fluid")
+        a(class="navbar-brand navbar-brand-text d-flex align-items-center" href="#")
+          img(src="images/alert.svg" style="width: 30px;")
+          h4 TrentinoAlert
+        div(class="dropdown ms-auto")
+          button(class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false") Tommaso Cifariello
+          ul(class="dropdown-menu dropdown-menu-end")
+            li
+              a(class="dropdown-item" href="/danger") Apri segnalazione di pericolo
+            li
+              a(class="dropdown-item" href="#") Action2
+            li
+              a(class="dropdown-item" href="#") Action3   
+    block content
