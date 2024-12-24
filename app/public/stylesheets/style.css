@@ -18,5 +18,17 @@ a {
   font-size: 25px
 }
 
+/* carousel */
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* LEAFLET */
 
+#main-map {
+  float: left;
+  overflow: hidden;
+}

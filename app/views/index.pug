@@ -1,11 +1,12 @@
 extends layout
 
 block append head
-  link(rel="stylesheet" src="leaflet/dist/leaflet.css")
-  script(src="leaflet/dist/leaflet.js")
+  link(rel="stylesheet" href="leaflet/dist/leaflet.css")
+  script(defer, src="leaflet/dist/leaflet.js")
+  script(defer, src="javascripts/main-map_scripts.js")
 
 block content
-  div(id="main-map")
-  script(src="javascripts/leaflet_scripts.js")
+  #mainMap(class="flex-grow-1")
+
 
   

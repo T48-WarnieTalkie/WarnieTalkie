@@ -4,22 +4,24 @@ html
     meta(charset='utf-8')
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title= title
-    link(rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css")
     link(rel='stylesheet' href='/stylesheets/style.css')
     link(rel="stylesheet" href="/stylesheets/compiled_scss/custom.css")
-    script(defer src="bootstrap/dist/js/bootstrap.bundle.min.js")
+    script(defer src="/bootstrap/dist/js/bootstrap.bundle.min.js")
     block head
-  body(class="d-flex flex-column")
-    nav(class="navbar navbar-expand-sm bg-body-tertiary") 
+  body(class="d-flex flex-column" style="height: 100vh")  
+    nav(class="navbar sticky-top navbar-expand-sm bg-body") 
       div(class="container-fluid")
-        a(class="navbar-brand navbar-brand-text d-flex align-items-center" href="#")
-          img(src="images/alert.svg" style="width: 30px;")
+        a(class="navbar-brand navbar-brand-text d-flex align-items-center" href="/")
+          img(src="/images/alert.svg" style="width: 30px;")
           h4 TrentinoAlert
         div(class="dropdown ms-auto")
-          button(class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false") Tommaso Cifariello
+          button(class="btn border-secondary-subtle text-secondary dropdown-toggle d-flex align-items-center gap-1" type="button" data-bs-toggle="dropdown" aria-expanded="false")
+            img(src="/images/avatar.svg" height="25")
+            span() Tommaso Cifariello
           ul(class="dropdown-menu dropdown-menu-end")
             li
-              a(class="dropdown-item" href="/danger") Apri segnalazione di pericolo
+              a(class="dropdown-item" href="/danger/676acbc185d3a4d984249c73") Apri segnalazione di pericolo
             li
               a(class="dropdown-item" href="#") Action2
             li

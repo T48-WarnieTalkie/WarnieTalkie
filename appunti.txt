@@ -9,9 +9,13 @@ struttura richieste:
 richiesta -> route -> controller -> models e database
 
 todo: 
--model danger
--script per aggiungere roba a danger
--pagina /danger che visualizza un danger
+-mettere parametro id in url
+-segnalazione su mappa content
+-segnalazioni su main mappa
+-sessioni e schermata di login/registrazione
+-cryptazione password
+-immagini carousel nel database
+-area riservata
 
 
 model danger:
@@ -25,13 +29,6 @@ bootstrap:
 -margin: my-1
 -padding: py-1
 -background: bg-
-
-
-to do:
--fare navbar
--
-
-
 
 flexbox:
 layout monodimensionale per distribuire equamente lo spazio fra gli elementi

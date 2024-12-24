@@ -14,7 +14,8 @@ const dangerSchema = new Schema( {
         coordinates: [Number]
     },
     sendTimestamp: {type: Date, required: true},
-    description: {type: String, required: true, maxLenght: 120}
+    description: {type: String, required: true, maxLenght: 120},
+    sentBy: {type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true}
 })
 
 module.exports = mongoose.model('Danger', dangerSchema);
